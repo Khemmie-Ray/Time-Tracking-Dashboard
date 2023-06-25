@@ -26,8 +26,10 @@ function dailyUpdate(info) {
           </div>
           <div class="content">
             <h3 class="card-title">${info.title} <span><img class="dot" src="images/icon-ellipsis.svg" alt=""></span></h3>
+            <div class="time">
             <h2>${info.timeframes.daily.current}hrs</h2>
             <p>Last Week - ${info.timeframes.daily.previous}hrs</p>
+            </div>
           </div>
     </div>`
 
@@ -42,8 +44,10 @@ function weeklyUpdate(info) {
           </div>
           <div class="content">
             <h3 class="card-title">${info.title} <span><img class="dot" src="images/icon-ellipsis.svg" alt=""></span></h3>
+            <div class="time">
             <h2>${info.timeframes.weekly.current}hrs</h2>
             <p>Last Week - ${info.timeframes.weekly.previous}hrs</p>
+            </div>
           </div>
     </div>`
 
@@ -58,8 +62,10 @@ function monthlyUpdate(info) {
           </div>
           <div class="content">
             <h3 class="card-title">${info.title} <span><img class="dot" src="images/icon-ellipsis.svg" alt=""></span></h3>
+            <div class="time">
             <h2>${info.timeframes.monthly.current}hrs</h2>
             <p>Last Week - ${info.timeframes.monthly.previous}hrs</p>
+            </div>
           </div>
     </div>`
 

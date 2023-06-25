@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Lightred : hsl(15, 100%, 70%);
+    --SoftBlue: hsl(195, 74%, 62%);
+    --LightRed: hsl(348, 100%, 68%);
+    --LimeGreen: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --SoftOrange: hsl(43, 84%, 65%);
+    --VeryDarkBlue: hsl(226, 43%, 10%);
+    --DarkBlue: hsl(235, 46%, 20%);
+    --DesaturatedBlue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+    --white: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--VeryDarkBlue);
+    color: var(--white);
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* ========================
+        Typography
+======================== */
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.main-title p:first-child {
+    font-weight: 500;
+}
+
+h2 + p,
+.profile p {
+    color: var(--PaleBlue);
+}
+
+.profile p {
+    margin-bottom: 0;
+}
+
+h1, h2 + p, h2 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+button {
+    font-size: 1rem;
+}
+
+/* ========================
+         Layout
+======================== */
+body {
+    flex-direction: column;
+}
+
+main {
+    width: 80%;
+}
+
+body, .topBg , main,
+.card-container, .card-title {
+    display: flex;
+}
+
+main, .card-container,
+.card-title {
+    justify-content: space-between;
+}
+
+.card-container {
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 1em;
+}
+
+button {
+    display: block;
+    border: 0;
+    background-color: var(--DarkBlue);
+    color: var(--PaleBlue);
+    margin: 1em;
+}
+
+.btn {
+    background-color: var(--DarkBlue);
+    padding: 1em;
+    position: relative;
+    margin-top: -10px;
+    height: 180px;
+}
+
+.report {
+    width: 20%;
+}
+
+.profile {
+    background-color: var(--DesaturatedBlue);
+    padding: 1em;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+}
+
+.profile img {
+    width: 40%;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-bottom: 2em;
+}
+
+.topBg {
+    background-color: var(--SoftOrange);
+    justify-content: end;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    padding: .5em;
+}
+
+.content {
+    background-color: var(--DarkBlue);
+    padding: 1em;
+    border-radius: 15px;
+    margin-top: -10px;
+    z-index: 1;
+    position: relative;
+}
+
+.color-1 {
+    background-color: var(--Lightred);
+}
+
+.color-2 {
+    background-color: var(--SoftBlue);
+}
+
+.color-3 {
+    background-color: var(--LightRed);
+}
+
+.color-4 {
+    background-color: var(--LimeGreen);
+}
+
+.color-5 {
+    background-color: var(--Violet);
+}
+
+.color-6 {
+    background-color: var(--SoftOrange);
+}
+
+.icons {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.dot, button {
+    cursor: pointer;
+}
+
+ button:hover, button:focus {
+    color: white;
+ }
+
+
+
+
+
+
+
